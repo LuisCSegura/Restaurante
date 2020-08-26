@@ -31,7 +31,7 @@ namespace CapaDiseño
             lblTipoUsuario.Text = usuario.GetTipoNombre().ToUpper();
             if (usuario.tipo == 0)
             {
-                inicio = new FrmAdministrador();
+                inicio = new FrmCajero();
             }
             else
             {

@@ -142,7 +142,7 @@ namespace CapaLogica
             try
             {
                 Validar(b);
-                b.contrasenna=Encriptar(b.contrasenna);
+                b.contrasenna = Encriptar(b.contrasenna);
                 usuDal.Loguear(b);
             }
             catch (Exception e)

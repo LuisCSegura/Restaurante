@@ -135,31 +135,7 @@ CREATE TABLE detalles_facturas(
 	CONSTRAINT fk_detfac_fact FOREIGN KEY(id_factura)REFERENCES facturas(id)
 );
 
-
-
-
-
-//GENESIS
-
-select * from reservas
-
-insert into reservas values
-(5,'1234','gene','17/06/2019','20/06/2019 00:00:00','10:00 PM','50148763','2',2,14,'Pendiente',true);
-
- SELECT  r.id_seccion, r.id_mesa FROM  reservas as r  
- where (r.fecha_reserva = '2019-06-20') and (r.hora != '10:00 PM' )
- and r.id_seccion != 1 
- 
- SELECT id, numero FROM mesas WHERE id != 0 AND activo = true AND id_seccion = 1 
- 
- SELECT id, id_seccion, id_mesa FROM reservas WHERE fecha_reserva = '20/06/2019 00:00:00' AND hora = '10:00 PM' AND id_seccion = 2
- 
- 
- 
- 
- 
-//LUISK
-
+INSERT INTO usuarios(codigo,cedula,nombre,contrasenna) VALUES('ADMIN','208090758','Luis Carlos Segura','sele2014');
 
 INSERT INTO ordenes_comida(cantidad,id_comida,id_comanda,preparado)VALUES();
 

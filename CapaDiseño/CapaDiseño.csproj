@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BF89479-2E4E-4CB9-9996-7CEAD7572DEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaDiseño</RootNamespace>
+    <AssemblyName>CapaDiseño</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdministrador.Designer.cs">
+      <DependentUpon>FrmAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBartender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBartender.Designer.cs">
+      <DependentUpon>FrmBartender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCajero.Designer.cs">
+      <DependentUpon>FrmCajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCocinero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCocinero.Designer.cs">
+      <DependentUpon>FrmCocinero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultas.Designer.cs">
+      <DependentUpon>FrmConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJefeSaloneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJefeSaloneros.Designer.cs">
+      <DependentUpon>FrmJefeSaloneros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReservas.Designer.cs">
+      <DependentUpon>FrmReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecepcion.Designer.cs">
+      <DependentUpon>FrmRecepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalon.Designer.cs">
+      <DependentUpon>frmSalon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBebida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBebida.Designer.cs">
+      <DependentUpon>FrmBebida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmComida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmComida.designer.cs">
+      <DependentUpon>FrmComida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalonero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalonero.Designer.cs">
+      <DependentUpon>frmSalonero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAdministrador.resx">
+      <DependentUpon>FrmAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBartender.resx">
+      <DependentUpon>FrmBartender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCajero.resx">
+      <DependentUpon>FrmCajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCocinero.resx">
+      <DependentUpon>FrmCocinero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultas.resx">
+      <DependentUpon>FrmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJefeSaloneros.resx">
+      <DependentUpon>FrmJefeSaloneros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReservas.resx">
+      <DependentUpon>FrmReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecepcion.resx">
+      <DependentUpon>FrmRecepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalon.resx">
+      <DependentUpon>frmSalon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBebida.resx">
+      <DependentUpon>FrmBebida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmComida.resx">
+      <DependentUpon>FrmComida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalonero.resx">
+      <DependentUpon>frmSalonero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{1dd4baca-9e58-4636-b439-a8985eb95045}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLogica\CapaLogica.csproj">
+      <Project>{9fae39d6-0557-4bc1-83db-904473a87092}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{26acec10-3f31-4b0e-ab2a-250790709c1f}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChefIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestaurantIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UsuarioIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitIcon48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UsuarioIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalirIcon64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalirIcon128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserIcon64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UsuarioIcon64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitIcon641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_icon_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-icon-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_icon_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drink_icon_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_icon_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_icon_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\jquery.datetimepicker.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
